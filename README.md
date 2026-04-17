@@ -1,16 +1,36 @@
-# React + Vite
+# Venturenix LAB Memory Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React memory card matching game built with Vite + React (pure JavaScript).
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 12 cards (6 unique pairs) with local animal images
+- 600ms CSS 3D flip animation (cubic-bezier easing)
+- Match/no-match logic with counters:
+  - 成功配對次數 (Successful matches)
+  - 嘗試配對次數 (Total attempts)
+- Glassmorphism UI design
+- Background: `#0F172A` | Main color: `#10B981` (emerald green)
+- Poppins (title) + Inter (body) fonts
+- 3×4 responsive grid layout
+- New game button shuffles cards instantly
+- Preloads all images on mount
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Vite + React (pure JavaScript, no TypeScript)
+- CSS only (no extra UI libraries)
+- Local images in `public/img/`
 
-## Expanding the ESLint configuration
+## Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+pnpm install
+pnpm dev
+```
+
+## Build
+
+```bash
+pnpm build
+```
